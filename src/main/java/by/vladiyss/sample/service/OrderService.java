@@ -58,13 +58,7 @@ public class OrderService {
     public String placeOrder(Order order) throws IncorrectOrderPersistenceException  {
 
         String orderId = "---";
-        //try {
-            orderId = orderStorage.persistOrder(order);
-        //    return orderId;
-        //}
-        //catch (IncorrectOrderPersistenceException incorrectOrderPersistenceException) {
-            //throw new IncorrectOrderPersistenceException(incorrectOrderPersistenceException.getMessage());
-        //}
+        orderId = orderStorage.persistOrder(order);
         return orderId;
     }
 
